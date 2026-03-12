@@ -1,10 +1,5 @@
-
 flask
 flask-cors
-<<<<<<< HEAD
-google-generativeai
-=======
-google-genai
->>>>>>> 028336f (Fix google-genai package name)
 pandas
+google-genai
 gunicorn
