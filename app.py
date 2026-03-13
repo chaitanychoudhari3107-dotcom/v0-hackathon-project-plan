@@ -16,7 +16,7 @@ CORS(app, origins=["*"])  # allows index.html to call this server
 # Prefer setting your key via an environment variable so it doesn’t get committed.
 # Example (PowerShell): $env:GEMINI_API_KEY = "AIzaSyCz1zdZ2Pxuc4L9MgJVLd1dnHMclJBQUG0"
 # Example (bash): export GEMINI_API_KEY="AIzaSyCz1zdZ2Pxuc4L9MgJVLd1dnHMclJBQUG0"
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBx4NmEGTJWLOYsJAWeMXil9cS6uL_cWgA")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 client = genai.Client(api_key=GEMINI_API_KEY)
 print(f"Gemini key loaded: {GEMINI_API_KEY[:8]}...")
 # Temporary — find available models
